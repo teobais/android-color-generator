@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Generate android colors easily">
+<meta name="author" content="Thodoris Bais">
+<meta name="keywords" content="android, colors, xml, hex, colorpicker">
+<title>Generate countries list in various formats</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.2/spectrum.min.js"></script>
+<script src="bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.1/spectrum.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap-sweetalert/lib/sweet-alert.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<a href="https://github.com/peric/GetCountries"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+	<div class="container">
+		<h1>Android Color Generator()</h1>
+		<h5>Α colorpicker app to generate hex colors for android easily. Created by <a href="https://twitter.com/ThodorisBais" target="_blank">Thodoris Bais</a>.</h5>
+	</div>
+	<div class="container">
+		<div class="app-container">
+        <div class="app-controls">
+            <div class='btn-group'>
+                <button class='btn toggleBtn' data-rule='showPalette'>Show Palette</button>
+                <button class='btn toggleBtn' data-rule='showInput'>Show Input</button>
+                <button class='btn toggleBtn' data-rule='showInitial'>Show Initial</button>
+                <button class='btn toggleBtn' data-rule='showPaletteOnly'>Show Palette Only</button>
+                <button class='btn toggleBtn' data-rule='togglePaletteOnly'>Show Picker Toggle Button</button>
+                <button class='btn toggleBtn' data-rule='showButtons'>Show Buttons</button>
+            </div>
+            <br />
+            <br />
+            <p>
+            <label>Draggable Size <input type='range' value='172' id='size' max='500' min='250' /></label>
+            <label>Hue Size <input type='range' value='16' id='huesize' max='90' min='5' /></label>
+            </p>
+        </div>
+			<input id="colorpicker">
+		</div>
+		<div class="row">
+			<p class="text-center">
+				<button id="generatecode" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-menu-right"></span> Generate</button>
+				<button id="clear" class="btn btn-danger btn-lg" type="button"><span class="glyphicon glyphicon-erase"></span> Clear</button>
+			</p>
+			<textarea id="generatedcode" class="generatedcode" rows="22" spellcheck="false"></textarea>
+		</div>
+	</div>
+</body>
+</html>
