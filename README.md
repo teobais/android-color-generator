@@ -9,6 +9,6 @@ Demo: http://toubou91.github.io/android-color-generator/
 A use case where the user has selected 20 colors:
 
 <p align="center">
-  <img  src="_img/screenshot.PNG" width="50%" height="50%" alt="Sample use case" />
+  <img  src="_img/screenshot.PNG" alt="Sample use case" />
 </p>
 
