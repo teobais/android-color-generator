@@ -55,23 +55,7 @@ $(function() {
 			$("#generatedcode").text(xml);
 		} else {
 			// Otherwise, an erroneous alert informs the user.
-			
-			/* We firstly have to hide relative to palette elements,
-			   as by default, they are presented in the foreground. */
-			$(".sp-picker-container").hide();
-			$(".sp-palette-container").hide();
-			
-			swal({   
-				title: "Your palette's empty!",
-				type: "error",
-				}, 
-				
-				/* And when our work is done (user confirmed the alert),
-				   we redisplay them. */
-				function() {
-					$(".sp-picker-container").show();
-					$(".sp-palette-container").show(); 
-				});
+			alert("Your palette's empty!");
 		}
 	});
 	
